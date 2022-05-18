@@ -29,7 +29,7 @@ Data undergo exploratory data analysia and data cleaning.
 <br>The use of label encoder have to be careful so that the NaN value remained in the data.
 <br>In this analysis, I referred to the [LabelEncoder that keeps missing values as 'NaN'](https://localcoder.org/labelencoder-that-keeps-missing-values-as-nan) to do label encoding with the NaN value remained. 
 <br>After that, min max scaling had been done to keep the range of features within -1 and 1. 
-<br>One hot encoder enable the target variable to be used in the deep learning model.
+<br>One hot encoder enables the target variable to be used in the deep learning model.
 <br>A sequential deep learning model of 4 hidden layers is built to train the data.
 <br>Relu activation function and batch normalization could help in avoid exploding and vanishing gradients.
 <br>Dropout layer can prevent overfitting.
