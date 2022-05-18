@@ -47,8 +47,7 @@ The model is able to predict category 3 better compared to the other categories 
 
 ![Image](https://github.com/innju/customer-segmentation-using-deep-learning/blob/main/figures/tensorboard_cs.png)
 
-
-
+Training metrics for each epoch is recorded in the history callback, including the loss and accuracy. The figure show the plot of accuracy and loss on training and validation datasets over training epoch. The epoch accuracy of the train is slightly lower and the epoch loss of the train is slightly higher compared to validate. The reason might because I use three dropout layer across the model. Dropout layer do disable some neurons and some of the information of the samples might lost and the subsequent layers tende to predict based on incomplete representation sof data.
 
 ### IMPROVEMENT
 1. I do found difficulties in apply to deployment later as the label encoder fitted with training data is unable to be applied to the deployment file, due to the way of coding. One of the improvement can be done here is use dictionary to manually map the categories to number instead of apply label encoder and ask it to remain the NaN value. This is one of the difficulties I faced when dealing with this dataset. 
