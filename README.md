@@ -5,9 +5,9 @@
 # customer-segmentation-using-deep-learning
 Approach of doing customer segmentation using deep learning
 
-<br>python scripts have been tested and run using Spyder(Python 3.8).
+<br>This python scripts have been tested and run using Spyder(Python 3.8).
 <br>The raw data can be found in the link below:
-<br>[https://www.kaggle.com/datasets/abisheksudarshan/customer-segmentation]
+<br>[Customer segmentation](https://www.kaggle.com/datasets/abisheksudarshan/customer-segmentation)
 <br>Thank you to the data contrbutor: Mr.Abishek Sudarshan
 
 ### FOLDERS AND FILES
@@ -27,7 +27,7 @@ Data undergo exploratory data analysia and data cleaning.
 <br>6 features out of 9 features are detected to have missing value.
 <br>KNN imputer is chosen to replace the NaN value.
 <br>The use of label encoder have to be careful so that the NaN value remained in the data.
-<br>In this analysis, I referred to the [https://localcoder.org/labelencoder-that-keeps-missing-values-as-nan] to do label encoding with the NaN value remained. 
+<br>In this analysis, I referred to the [LabelEncoder that keeps missing values as 'NaN'](https://localcoder.org/labelencoder-that-keeps-missing-values-as-nan) to do label encoding with the NaN value remained. 
 <br>After that, min max scaling had been done to keep the range of features within -1 and 1. 
 <br>One hot encoder enable the target variable to be used in the deep learning model.
 <br>A sequential deep learning model of 4 hidden layers is built to train the data.
@@ -43,8 +43,11 @@ Data undergo exploratory data analysia and data cleaning.
 
 ### IMPROVEMENT
 1. I do found difficulties in apply to deployment later as the label encoder fitted with training data is unable to be applied to the deployment file, due to the way of coding. One of the improvement can be done here is use dictionary to manually map the categories to number instead of apply label encoder and ask it to remain the NaN value. This is one of the difficulties I faced when dealing with this dataset. 
-<br>2. The accuracy of the deep learning model is not high. One of the reason is the lack of use of feature selection. Another reason could be because I included outliers in the dataset without further data preprocessing for the outliers. Thirdly is the properties of deep learning model that tends to perform well with huge amount of dataset.
-<br>3. A modules consists of classes and functions should be separated from train file. I do need more times to practice on this.
+
+2. The accuracy of the deep learning model is not high. One of the reason is the lack of use of feature selection. Another reason could be because I included outliers in the dataset without further data preprocessing for the outliers. Thirdly is the properties of deep learning model that tends to perform well with huge amount of dataset.
+
+3. A modules consists of classes and functions should be separated from train file. I do need more times to practice on this.
+
 
 
 Thanks for reading.
