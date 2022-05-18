@@ -31,8 +31,10 @@ Data undergo exploratory data analysia and data cleaning.
 <br>After that, min max scaling had been done to keep the range of features within -1 and 1. 
 <br>One hot encoder enables the target variable to be used in the deep learning model.
 <br>A sequential deep learning model of 4 hidden layers is built to train the data.
+
 ![Image](https://github.com/innju/customer-segmentation-using-deep-learning/blob/main/figures/model.png)
-<br>Relu activation function and batch normalization could help in avoid exploding and vanishing gradients.
+
+Relu activation function and batch normalization could help in avoid exploding and vanishing gradients.
 <br>Dropout layer can prevent overfitting.
 <br>Classification problem is evaluated using the categorical_crossentropy as loss and accuracy as the metrics.
 
