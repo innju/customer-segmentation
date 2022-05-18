@@ -34,12 +34,18 @@ Data undergo exploratory data analysia and data cleaning.
 
 ![Image](https://github.com/innju/customer-segmentation-using-deep-learning/blob/main/figures/model.png)
 
-Relu activation function and batch normalization could help in avoid exploding and vanishing gradients.
-<br>Dropout layer can prevent overfitting.
+Relu activation function and batch normalization could help in avoid exploding and vanishing gradients while dropout layer can prevent overfitting.
 <br>Classification problem is evaluated using the categorical_crossentropy as loss and accuracy as the metrics.
 
 
 ### RESULT
+The classification report shown model accuracy of 0.54, which is equilvalent to 54.0%.
+
+![Image](https://github.com/innju/customer-segmentation-using-deep-learning/blob/main/figures/classification_report_cs.png)
+
+The model is able to predict category 3 better compared to the other categories of segmentation, with highest f1-score of 0.69 and the unideal category is class 1 with lowest f1-score.  
+
+![Image](https://github.com/innju/customer-segmentation-using-deep-learning/blob/main/figures/tensorboard_cs.png)
 
 
 
@@ -50,6 +56,7 @@ Relu activation function and batch normalization could help in avoid exploding a
 2. The accuracy of the deep learning model is not high. One of the reason is the lack of use of feature selection. Another reason could be because I included outliers in the dataset without further data preprocessing for the outliers. Thirdly is the properties of deep learning model that tends to perform well with huge amount of dataset.
 
 3. A modules consists of classes and functions should be separated from train file. I do need more times to practice on this.
+
 
 
 
